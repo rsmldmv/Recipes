@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..
+    700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+          <title>Blake's Recipes</title>
+
+    <style>
+        body {
+            background-color: rgb(246, 222, 191);
+        }
+
+        .title {
+            font-size: 3em;
+            font-weight: 700;
+            font-style: italic;
+            margin: 20px ;
+            width: 350px;
+        }
+
+        .p-bold {
+            font-weight: 600;
+        }
+
+        .p-font-medium {
+            font-size: medium;
+        }
+
+        .p-font-large {
+            font-size: large;
+        }
+
+        .p-font-larger {
+            font-size: larger;
+        }
+
+        .p-font-xlarge {
+            font-size: x-large;
+        }
+
+        .main-display {
+            margin: 25px;
+            display: inline-block;
+        }
+
+        .div-border {
+            border: 1px solid ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Blake's Recipes</div>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu1">Breakfast</a></li>
+            <li><a data-toggle="tab" href="#menu2">Lunch</a></li>
+            <li><a data-toggle="tab" href="#menu3">Dinner</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <h3>Menu 2</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseOne">
+                            <h3>Shrimp Scampi</h3>
+                        </a>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="p-bold p-font-large">Ingredients</p>
+                            <ul class="p-font-large">
+                              <li>3 tbsp butter</li>
+                              <li>2 tbsp olive oil</li>
+                              <li>4 minced garlic cloves</li>
+                              <li>1/2 c. dry white wine (Sauvignon Blanc)</li>
+                              <li>1 tsp. kosher/sea salt</li>
+                              <li>1/4 tsp. cracked black pepper</li>
+                              <li>2 tbsp chopped parsley</li>
+                              <li>1 1/2 lbs. large or jumbo shrimp</li>
+                              <li>Juice from 1/2 a lemon</li>
+                            </ul>
+                            <p class="p-bold p-font-large">Cooking Instructions</p>
+                            <p class="p-font-large"><strong>Make the sauce.</strong> In a large skillet over medium 
+                                heat, melt the butter with the oil. Add the garlic and saute for 30 seconds. Add the 
+                                wine, salt, and red pepper flakes. Bring to a simmer, then reduce by half (about 2 to 
+                                3 minutes), stirring occasionally. Add the shrimp to the skillet and saute for about 
+                                3 minutes until just cooked through.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <h3>Homemade Lasagna</h3>
+                        </a>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="p-bold p-font-large">Ingredients</p>
+                            <ul class="p-font-large">
+                                <li>2 pounds whole milk ricotta cheese</li>
+	                            <li>1 pound box of dry lasagna noodles (you will need 16 noodles)</li>
+	                            <li>2 tablespoons extra virgin olive oil</li>
+	                            <li>1 cup chopped onions</li>
+                                <li>1 tablespoon chopped garlic</li>
+	                            <li>1-pound lean ground beef (90/10)</li>
+	                            <li>1 pound ground Italian sausage meat (hot or sweet your choice)</li>
+	                            <li>1 28–ounce canned crushed tomatoes (we use Cento)</li>
+	                            <li>2 tablespoons tomato paste</li>
+	                            <li>1 teaspoon kosher salt</li>
+	                            <li>1/4 teaspoon freshly ground black pepper</li>
+	                            <li>1 teaspoon dry oregano</li>
+	                            <li>2 tablespoons dry basil or 4 tablespoons chopped fresh basil</li>
+	                            <li>Pinch red pepper flakes</li>
+	                            <li>Ricotta cheese that was strained in the first step</li>
+	                            <li>1 cup shredded mozzarella</li>
+	                            <li>2 eggs beaten</li>
+	                            <li>1 cup grated Parmesan cheese</li>
+	                            <li>1 teaspoon kosher salt</li>
+	                            <li>1/4 teaspoon freshly ground black pepper</li>
+	                            <li>1/2 cup chopped fresh Italian flat leaf parsley</li>
+	                            <li>2 1/2 cups tomato sauce (see recipe here)</li>
+	                            <li>8 ounces fresh mozzarella sliced into 12 slices</li>
+	                            <li>3 cups shredded mozzarella</li>
+                            </ul>
+                            <p class="p-bold p-font-large">Cooking Instructions</p>
+                            <p class="p-font-large">Cook lasagna noodles according to box directions but keep them slightly undercooked 
+                               (cook approximately 7-8 minutes). They should still have a good bite to them. Rinse and 
+                               cool. Keep moist while you prepare the rest of the dish.
+                            </p>
+                            <p class="p-bold p-font-large">For Meat Sauce</p>
+                            <ul class="p-font-large">
+                                <li>2 tablespoons extra virgin olive oil</li>
+	                            <li>1 cup chopped onions</li>
+	                            <li>1 tablespoon chopped garlic</li>
+	                            <li>1-pound lean ground beef (90/10)</li>
+	                            <li>1 pound ground Italian sausage meat (hot or sweet your choice)</li>
+	                            <li>1 28–ounce canned crushed tomatoes (we use Cento)</li>
+	                            <li>2 tablespoons tomato paste</li>
+	                            <li>1 teaspoon kosher salt</li>
+	                            <li>1/4 teaspoon freshly ground black pepper</li>
+	                            <li>1 teaspoon dry oregano</li>
+	                            <li>2 tablespoons dry basil or 4 tablespoons chopped fresh basil</li>
+	                            <li>Pinch red pepper flakes</li>
+                            </ul>
+                            <p class="p-bold p-font-large">Cooking Meat Sauce</p>
+                            <p class="p-font-large">
+                                In a large skillet, heat the olive oil and cook the onions for about two minutes over medium high heat. 
+                                Add the garlic and cook one more minute. Add the meat, stir and cook until there is no pink. Depending on 
+                                the fat content of the meat you are using, you may need to drain off some liquid. There should only be a 
+                                few tablespoons of liquid after cooking the meat. Add crushed tomatoes, tomato paste, 1 teaspoon salt, ¼ 
+                                teaspoon pepper, oregano, basil, red pepper flakes and mint. Reduce to medium and simmer ten minutes, 
+                                stirring occasionally. Set aside.
+                            </p>
+                            <p class="p-bold p-font-large">For the cheese mixture</p>
+                            <ul class="p-font-large">
+                                <li>Ricotta cheese that was strained in the first step</li>
+                            	<li>1 cup shredded mozzarella</li>
+	                            <li>2 eggs beaten</li>
+	                            <li>1 cup grated Parmesan cheese</li>
+	                            <li>1 teaspoon kosher salt</li>
+	                            <li>1/4 teaspoon freshly ground black pepper</li>
+	                            <li>1/2 cup chopped fresh Italian flat leaf parsley</li>
+                            </ul>
+                            <p class="p-font-large">1. Preheat oven to 375 degrees and put oven rack in center of oven.</p>
+                            <p class="p-font-large">2. In a 9X13X3 glass baking dish, ladle in one cup of tomato sauce into the bottom 
+                                and lay four lasagna noodles overlapping slightly. Add one third of these cheese mixture, one third of the 
+                                meat mixture and half of the sliced fresh mozzarella. (The sliced mozzarella will not cover the whole pan, 
+                                just spread as evenly as possible). Repeat with four more noodles, one third of cheese mixture, one third of 
+                                meat mixture and the other half of sliced fresh mozzarella. Cover with four more noodles and top with remaining 
+                                cheese mixture, remaining meat mixture and 1 ½ cups shredded mozzarella cheese. Finish with four more noodles, 
+                                1 ½ cups tomato sauce, 1 ½ cups shredded mozzarella and ½ cup grated Parmesan cheese.
+                            </p>
+                            <p class="p-font-large">3. Lay a piece of parchment paper over top and then cover tightly with foil. Cover a sheet 
+                                pan with foil and place a rack in foiled pan. Now place the covered lasagna on the rack and place in the oven. 
+                                The rack is to circulate heat and the lower pan will catch any drips.
+                            </p>
+                            <p class="p-font-large">4.	Bake for one hour covered. Remove foil and parchment and cook uncovered for 30 more 
+                                minutes. Let rest 15-30 minutes before cutting.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <h3>Collapsible Group Item #3</h3>
+                        </a>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
