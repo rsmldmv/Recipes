@@ -1,0 +1,129 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-image: url("../img/bg-image_2.jpg");
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: none;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.text-color {
+    color: #fff;
+    ;
+}
+
+.bg-color {
+    background-color: rgb(85, 85, 85);
+}
+
+.button {
+    font-size: 1rem;
+    background-color: rgb(171, 171, 171);
+}
+
+textarea {
+    resize: none;
+}
+
+.msg {
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    color: #000;
+    font-size: 18px;
+    display: none;
+    text-align: center;
+    border-radius: 7px;
+    background-color: rgb(125, 243, 190);
+    transition: opacity 0.5s ease-out;
+}
+
+.bg-form {
+    background-color: rgb(85, 85, 85);
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.container1 {
+    display: grid;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 1600px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, minmax(100px, auto));
+    grid-gap: 15px;
+    color: #fff;
+}
+
+.div1 {
+    height: 400px;
+    padding: 15px 15px;
+    grid-column: 2 / 7;
+    grid-row: 2 / 7;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.div2 {
+    margin-top: -45px;
+    height: 175px;
+    padding: 15px 15px;
+    grid-column: 2 / 7;
+    grid-row: 6 / 7;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.div3 {
+    height: 590px;
+    grid-column: 7 / 12;
+    grid-row: 2 / 9;
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.div3 h3 {
+    width: 100%;
+    color: yellow;
+    text-align: center;
+    margin: 10px;
+}
+
+ul {
+    margin: 15px 15px;
+    font-size: 20px;
+}
+
+.mar {
+    margin: 10px;
+}
+
+.backButton {
+    height: 40px;
+    width: 110px;
+    margin: 50px 100px;
+    grid-column: 2 / 1;
+}
+
+@media (max-width: 650px) {
+    body {
+        width: 500px;
+        float: left;
+    }
+}

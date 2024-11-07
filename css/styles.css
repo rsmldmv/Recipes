@@ -1,0 +1,201 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-image: url("../img/bg-image.jpg");
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.title {
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px;
+    width: 350px;
+}
+
+.h1-width {
+    color: #DDDCAE;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    border: 3px solid #DDDCAE;
+    border-radius: 50px;
+    text-shadow: 2px 2px 3px #000;
+    background-color: #555;
+}
+
+.pill {
+    border: 1px solid transparent;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 8px;
+}
+
+.p-bold {
+    font-weight: 600;
+}
+
+.p-font-medium {
+    font-size: medium;
+}
+
+.p-font-large {
+    font-size: large;
+}
+
+.p-font-larger {
+    font-size: larger;
+}
+
+.p-font-xlarge {
+    font-size: x-large;
+}
+
+.main-display {
+    margin: 25px;
+    display: inline-block;
+}
+
+.div-border {
+    border: 1px solid;
+}
+
+.h3-mb {
+    padding: 25px 0;
+}
+
+.button-font {
+    font-size: 2.5rem;
+}
+
+.recipe-font {
+    font-size: 2rem;
+}
+
+.breakfast-bg {
+    background-color: #e7bc40;
+}
+
+.lunch-bg {
+    background-color: #95f199;
+}
+
+.dinner-bg {
+    background-color: #faf734;
+}
+
+.bg-1 {
+    background-color: #85DFCD;
+}
+
+.bg-3 {
+    background-color: #F6CE99;
+}
+
+.add-recipe {
+    border: 1px solid #FFF;
+    border-radius: 50px;
+}
+
+.add-shadow {
+    width: 45%;
+    color: #EDE6D4;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.menu-item-color {
+    color: rgb(255, 255, 255);
+}
+
+.menu-item-color:hover {
+    background-color: #2A4DF9;
+    border: 1px solid #2A4DF9;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 8px;
+}
+
+.edit_label a:hover {
+    background-color: #2A4DF9;
+    text-decoration: none;
+    color: #fff;
+}
+
+#recipe_header {
+    text-decoration: none;
+}
+
+#grid1 {
+    height: auto;
+    margin: 0 auto;
+}
+
+#grid1 a {
+    color: #000;
+    background-color: #EFCF59;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 2px solid #808080;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+#welcome {
+    color: #fff;
+}
+
+.ov {
+    overflow: none;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li a {
+    margin: 0;
+    padding: 0;
+    padding: 0 15px;
+}
+
+.sticky-div {
+    position: sticky;
+    top: 230px;
+    left: 120px;
+}
+
+table {
+    background-color: transparent;
+}
+
+td {
+    width: auto;
+    height: 35px;
+    background-color: transparent;
+}
+
+table th {
+    height: 30px;
+    background-color: orange;
+}
+
+.divs {
+    height: auto;
+    width: auto;
+}
+
+.rLinks {
+    color: #000;
+    text-decoration: none;
+}
+
+#recipes1 a:hover {
+    color: #fff;
+    background-color: cadetblue;
+}

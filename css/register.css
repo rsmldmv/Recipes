@@ -1,0 +1,55 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    background-image: url("../img/bg-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top, left;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 1;
+}
+
+#rForm {
+    width: 400px;
+    height: 510px;
+    margin: 90px auto;
+    border: 2px solid #fff;
+    border-radius: 8px 8px;
+    box-shadow: 5px 5px 10px;
+    background-color: rgb(148, 184, 198);
+}
+
+h3 {
+    color: #f8cc48;
+    width: 70%;
+    float: right;
+    text-shadow: 2px 2px 5px #222;
+}
+
+label {
+    color: #000;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+input[type=submit],
+input[type=button],
+input[type=text],
+input[type=password] {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#msg {
+    height: auto;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+    font-family: 'Arial Narrow';
+    background-color: rgb(148, 184, 198);
+}
