@@ -1,0 +1,21 @@
+{
+  "name": "Recipes",
+  "version": "1.0.0",
+  "description": "Starter template for Bootstrap websites",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "keywords": [
+    "Blake",
+    "McKenna"
+  ],
+  "author": "Blake McKenna",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.78.0"
+  }
+}
