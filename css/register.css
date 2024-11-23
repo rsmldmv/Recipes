@@ -20,7 +20,8 @@ body {
     border: 2px solid #fff;
     border-radius: 8px 8px;
     box-shadow: 5px 5px 10px;
-    background-color: rgb(148, 184, 198);
+    /* background-color: #e7e6e6; */
+    background-color: rgb(241, 242, 247);
 }
 
 h3 {

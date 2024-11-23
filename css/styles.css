@@ -98,8 +98,9 @@ body {
 }
 
 .add-recipe {
-    border: 1px solid #FFF;
-    border-radius: 50px;
+    color: limegreen;
+    /* border: 1px solid #FFF;
+    border-radius: 50px; */
 }
 
 .add-shadow {

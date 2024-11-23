@@ -20,7 +20,8 @@ h3 {
     height: 380px;
     width: 400px;
     margin: 0 auto;
-    background-color: rgb(148, 184, 198);
+    background-color: #e7e6e6;
+    /* background-color: rgb(148, 184, 198); */
     border: 1px solid #fff;
     border-radius: 10px 10px;
     box-shadow: 5px 7px 5px;
@@ -35,11 +36,26 @@ input[type=password] {
     padding-bottom: 10px;
 }
 
+#goBack a {
+    color: #000;
+}
+
 label {
     height: 35px;
 }
 
 .svg {
+    color: #000;
     margin-top: 22px;
     margin-left: 30px;
+}
+
+#msg {
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
+
+#msg p {
+    color: #212020;
 }

@@ -7,14 +7,10 @@ $errors = [];
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Key and nonce generation
-    $passkey = sodium_crypto_secretbox_keygen();
-    $nonce = random_bytes(SODIUM_CRYPTO_SECRETBOX_NONCEBYTES);
-
     $username = trim($_POST["username"]);
     $handle = trim($_POST["handle"]);
     $email = trim($_POST["email"]);
-    $encrypted_password = sodium_crypto_secretbox(trim($_POST['password']), $nonce, $passkey);
+    $hashed = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
     // Validate email
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -23,14 +19,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If there are no errors, you can process the data (e.g., save to database)
     if (empty($errors)) {
-        $sql = "INSERT INTO food.users (username, password, handle, email, passkey, nonce) VALUES (:username, :password, :handle, :email, :passkey, :nonce)";
+        $sql = "INSERT INTO food.users (username, password, handle, email) VALUES (:username, :password, :handle, :email)";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(":username", $username);
-        $stmt->bindParam(":password", $encrypted_password);
+        $stmt->bindParam(":password", $hashed);
         $stmt->bindParam(":handle", $handle);
         $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":passkey", $passkey);
-        $stmt->bindParam(":nonce", $nonce);
 
         // Execute the statement and check for success
         if ($stmt->execute()) {
@@ -65,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row col-12 mt-4 mx-auto py-5" style="z-index: -1;">
             <form id="rForm" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="form form-method pt-4">
                 <div style="padding: 10px">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black"
                         class="bi bi-person ms-4" viewBox="0 0 16 16">
                         <path
                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
